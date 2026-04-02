@@ -11,19 +11,11 @@
 <body>
     <!-- The below tag is using Bulma CSS. Try replacing line 14 with line 13. -->
     <!-- <div class="has-text-success-dark is-size-4  has-text-weight-medium"> -->
-    <div>
-        <a href="{{ url_for('home') }}">
-            Home
-        </a>
-        &nbsp;&nbsp;
-        <a href="{{ url_for('all_pages') }}">
-            Pages
-        </a>
-        &nbsp;&nbsp;
-        <a href="{{ url_for('about') }}">
-            About
-        </a>
-    </div>
+    <nav class="navbar">
+    <a href="{{ url_for('home') }}" class="nav-link">Home</a>
+    <a href="{{ url_for('all_pages') }}" class="nav-link">Pages</a>
+    <a href="{{ url_for('about') }}" class="nav-link">About</a>
+    </nav>
 
     <!-- The below tag is using Bulma CSS. Try replacing line 30 with line 29. -->
     <!-- <div class="content"> -->
